@@ -1,0 +1,223 @@
+#\#wrapper {
+    width: 50%;
+    margin: 50px auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+hgroup h2 {
+    display: none;
+}
+
+hgroup h1 {
+    border-bottom: 2px solid lightgray;
+    padding-bottom: 10px;
+}
+
+header figure {
+    display: flex;
+    flex-direction: row-reverse;
+    transform: rotate(-14deg);
+}
+
+img {
+    width: 15vh;
+}
+
+#about h3 {
+    display: none;
+}
+
+#about p {
+    margin-top: -145px;
+    margin-right: 160px;
+    padding-right: 50px;
+    text-align: justify;
+    color: gray;
+    font-style: italic;
+}
+
+section{
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+section h3{
+    grid-row: 1/span 2;
+    width: 130px;
+    border-right: 2px solid gray;
+}
+
+.skills {
+    display: flex;
+}
+
+.skill {
+    background-color: #008080;
+    margin: 2px 0 8px 8px;
+    padding: 10px 2%;
+    width: 140px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills-primary [data-skill="5"]::after {
+    content: " \2605""\2605""\2605";
+}
+[data-skill="3"]::after {
+    content: " \2605""\2605";
+}
+[data-skill="1"]::after {
+    content: " \2605";
+}
+
+[data-skill="9"]::after {
+    content: " \2605""\2605""\2605""\2605""\2605";
+}
+.skills-secondary [data-skill="5"]::after {
+    content: " \2605""\2605""\2605";
+}
+[data-skill="7"]::after {
+    content: " \2605""\2605""\2605""\2605";
+}
+
+.skills-primary {
+    font-size: larger;
+}
+.skills-secondary {
+    font-size: x-small;
+}
+#competencies {
+    margin: 50px 0;
+}
+
+.experience-institution {
+    display: none;
+}
+
+.experience-type {
+    color: #008080;
+}
+
+.experience-details {
+    display: flex;
+    justify-content: flex-end;
+    color: gray;
+}
+
+.experience {
+    padding-left: 10px;
+}
+
+#contact h3 {
+    display: none;
+}
+
+.contact-email a {
+    content: url(/public/images/email.png);
+    width: 10vh;
+}
+
+.contact-phone a {
+    content: url(/public/images/phone.png);
+    width: 10vh;
+}
+
+.contact-github a {
+    content: url(/public/images/github.png);
+    width: 10vh;
+}
+
+.contact-facebook a {
+    content: url(/public/images/facebook.png);
+    width: 10vh;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 200px;
+}
+
+.contact {
+    padding: 25px;
+}
+
+.contact-skype {
+    display: none;
+}
+
+.contact-email dt {
+    display: none;
+}
+
+.contact-phone dt {
+    display: none;
+}
+
+.contact-github dt {
+    display: none;
+}
+
+.contact-facebook dt {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    #wrapper {
+        width: 90%;
+        margin: 30px auto;
+    }
+    
+    hgroup h1 {
+        padding-bottom: 5px;
+    }
+
+    header figure {
+        transform: rotate(0);
+    }
+
+    img {
+        width: 10vh;
+    }
+
+    #about p {
+        margin-top: 0;
+        margin-right: 0;
+        padding-right: 0;
+        text-align: left;
+    }
+
+    section {
+        display: block;
+    }
+    
+    section h3 {
+        grid-row: auto;
+        width: auto;
+        border-right: none;
+    }
+
+    .skills {
+        flex-wrap: wrap;
+    }
+
+    .skill {
+        margin: 2px 0 5px 5px;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .skills-primary, .skills-secondary {
+        font-size: inherit;
+    }
+
+    #contact .contacts {
+        flex-direction: column;
+        padding-left: 0;
+    }
+
+    .contact {
+        padding: 15px;
+    }
+}

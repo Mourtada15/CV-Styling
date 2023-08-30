@@ -1,0 +1,212 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+hgroup {
+    color: red;
+}
+
+header div {
+    display: flex;
+    margin-left: 28%;
+}
+
+header {
+    background-color: lightgrey;
+}
+
+h3::before {
+    content: ".";
+    font-size: 120px;
+    color: red;
+    display: inline;
+}
+
+h3 {
+    border-bottom: 1px solid lightgray;
+}
+
+.experience .experience-type {
+    color: red;
+}
+.experience .experience-institution {
+    color: red;
+    font-weight: lighter;
+}
+.experience .experience-institution::before {
+    content: "@ ";
+    color: red;
+}
+.experience-date-separator {
+    color: red;
+}
+
+.experience-location::before {
+    content: "In";
+}
+.experience-location::after {
+    content: "on";
+}
+
+.experience-details .experience-location, .day, .month, .year {
+    color: gray;
+    padding-left: 12px;
+}
+
+.skills-primary::before {
+    content: "Main";
+}
+
+.skills-secondary::before {
+    content: "Other";
+}
+
+.skills-primary .skill {
+    background-color: grey;
+    width: 100%;
+    display: block;
+    padding: 1% 0.5%;
+    margin: 0.5% 0;
+}
+
+.skills-secondary .skill {
+    background-color: lightgray;
+    width: 100%;
+    display: block;
+    padding: 1% 0.5%;
+    margin: 0.5% 0;
+}
+
+[data-skill="5"] span {
+    background-color: red;
+    display: block;
+    width: 70%;
+    padding: 1%;
+}
+
+[data-skill="3"] span {
+    background-color: red;
+    display: block;
+    width: 40%;
+    padding: 1%;
+}
+
+[data-skill="1"] span {
+    background-color: red;
+    display: block;
+    width: 25%;
+    padding: 1%;
+}
+
+[data-skill="9"] span {
+    background-color: #ff4b4b;
+    display: block;
+    width: 90%;
+    padding: 1%;
+}
+
+.skills-secondary [data-skill="5"] span {
+    background-color: #ff4b4b;
+    display: block;
+    width: 50%;
+    padding: 1%;
+}
+
+[data-skill="7"] span {
+    background-color: #ff4b4b;
+    display: block;
+    width: 70%;
+    padding: 1%;
+}
+
+#contact h3 {
+    display: none;
+}
+
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 26%;
+}
+
+p {
+    margin-right: 2%;
+}
+
+dl {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    padding: 0;
+}
+
+#contact {
+    position: absolute;
+    margin: -7.8% 0 0 24%;
+    width: 50%;
+}
+
+.contacts a {
+    color: red;
+    text-decoration: none;
+}
+
+.contact-type {
+    width: 28%;
+    background-color: red;
+    margin: -10px;
+    padding: 5px;
+    color: white;
+}
+
+.contact-value {
+    width: 75%;
+    background-color: black;
+    margin: -10px;
+    padding: 5px;
+}
+
+@media all and (max-width: 1737px){
+
+    .content {
+        display: block;
+        margin: 0 5%;
+    }
+    
+    #contact {
+        display: block;
+        margin: 0;
+        width: 100%;
+    }   
+
+    #contact::before {
+        content: "";
+        display: block;
+        border-top: 1px solid lightgray;
+    }
+
+    .contact-type {
+        /* width: 28%; */
+        background-color: red;
+        /* margin: -10px; */
+        padding: 5px;
+        color: white;
+    }
+    
+    .contact-value {
+        /* width: 75%; */
+        background-color: white;
+        /* margin: -10px; */
+        padding: 5px;
+    }
+
+    header div {
+        display: block;
+        margin-left: 2%;
+    }
+
+
+}
