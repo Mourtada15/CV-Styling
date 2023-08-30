@@ -7,6 +7,10 @@ hgroup {
     color: red;
 }
 
+img {
+    width: 20%;
+}
+
 header div {
     display: flex;
     margin-left: 28%;
